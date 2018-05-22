@@ -17,7 +17,7 @@ hide from the user interface.
 
 e.g.
 BasicAlgorithm object = new *ClassType*(*arguments*);
-object.method(1);
+r\rbject.method(1);
 
 
 The different algorithms (.java) include: 
