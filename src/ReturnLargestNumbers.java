@@ -7,7 +7,7 @@ import java.util.ArrayList;
  */
 public class ReturnLargestNumbers extends BasicAlgorithm {
     /* Fields */
-    private static int[][] n;
+    private int[][] n;
 
 
     /* Constructor */

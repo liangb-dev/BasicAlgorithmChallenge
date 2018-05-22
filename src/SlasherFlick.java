@@ -8,8 +8,8 @@ import java.util.List;
  */
 public class SlasherFlick extends BasicAlgorithm {
     /* Fields */
-    private static String[] n;
-    private static int num;
+    private String[] n;
+    private int num;
 
 
     /* Constructor */
@@ -59,6 +59,10 @@ public class SlasherFlick extends BasicAlgorithm {
         return result;
     }
 
+    /**
+     * Function that prints an array inline
+     * @param arr
+     */
     private void printArray(String[] arr) {
         String line = "";
         for (String obj : arr) {

@@ -4,7 +4,7 @@
 public class Factorialize extends BasicAlgorithm {
 
     /* Fields */
-    private static int n;
+    private int n;
     /* Constructor */
     Factorialize(int n){
         this.n = n;

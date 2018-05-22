@@ -3,7 +3,7 @@
  */
 public class StringsLongestWord extends BasicAlgorithm {
     /* Fields */
-    private static String n;
+    private String n;
 
 
     /* Constructor */

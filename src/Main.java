@@ -26,9 +26,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String[] arr = {"goo", "hoo", "loo", "doo", "foo", "coo", "sho", "roo", "too"};
+        int[] arr = {1,5,8,3,5,8,2};
 
-        BasicAlgorithm object = new SlasherFlick(arr,3);
+        BasicAlgorithm object = new CaesarsCipher("SERR PBQR PNZC");
         object.method(1);
 
     }

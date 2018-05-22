@@ -3,8 +3,8 @@
  */
 public class RepeatAString extends BasicAlgorithm {
     /* Fields */
-    private static int num;
-    private static String n;
+    private int num;
+    private String n;
 
 
     /* Constructor */

@@ -4,8 +4,8 @@
  */
 public class TruncateString extends BasicAlgorithm {
     /* Fields */
-    private static String n;
-    private static int num;
+    private String n;
+    private int num;
 
 
     /* Constructor */

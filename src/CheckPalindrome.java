@@ -4,7 +4,7 @@
 public class CheckPalindrome extends BasicAlgorithm {
 
     /* Fields */
-    private static String n;
+    private String n;
 
     /* Constructor */
     CheckPalindrome(String n) {

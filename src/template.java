@@ -1,6 +1,10 @@
+/**
+ * This is just a Mutations for Class consistency
+ * between each challenge (class)
+ */
 public class template extends BasicAlgorithm {
     /* Fields */
-    private static int n;
+    private int n;
 
 
     /* Constructor */

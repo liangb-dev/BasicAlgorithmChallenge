@@ -4,8 +4,8 @@
  */
 public class ConfirmEnding extends BasicAlgorithm {
     /* Fields */
-    private static String original;
-    private static String ending;
+    private String original;
+    private String ending;
 
 
     /* Constructor */
