@@ -14,34 +14,34 @@ across the different 'BasicAlgorithms' that implement a common method -
 the selector method(). Now their interfaces are largely the same. 
 All other methods they implement (as well as fields) are private, so as to
 hide from the user interface. 
-
+\
 e.g.
-BasicAlgorithm object = new *ClassType*(*arguments*);
-r\rbject.method(1);
-
-
+BasicAlgorithm object = new *ClassType*(*arguments*);\
+object.method(1);
+\
+\
 The different algorithms (.java) include: 
 (by alphabetic order, not order completed)
+\
+CaesarsCipher\
+CheckPalindrome\
+ChunkyMonkey\
+ConfirmEnding\
+Factorialize\
+FalsyBouncer (N/A)\
+Mutations\
+RepeatAString\
+ReturnLargestNumbers\
+ReverseString\
+SeekDestroy\
+SlasherFlick\
+StringsLongestWord\
+TitleCaser\
+TruncateString\
+WhereDoIBelong\
 
-CaesarsCipher
-CheckPalindrome
-ChunkyMonkey
-ConfirmEnding
-Factorialize
-FalsyBouncer (N/A)
-Mutations
-RepeatAString
-ReturnLargestNumbers
-ReverseString
-SeekDestroy
-SlasherFlick
-StringsLongestWord
-TitleCaser
-TruncateString
-WhereDoIBelong
-
-other files:
-BasicAlgotirhm.java
-Main.java
-template.java
+other files:\
+BasicAlgotirhm.java\
+Main.java\
+template.java\
 
