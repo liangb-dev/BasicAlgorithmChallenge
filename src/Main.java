@@ -26,7 +26,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        BasicAlgorithm object = new RepeatAString("Repeat a String",3);
+        String[] arr = {"goo", "hoo", "loo", "doo", "foo", "coo", "sho", "roo", "too"};
+
+        BasicAlgorithm object = new SlasherFlick(arr,3);
         object.method(1);
 
     }
