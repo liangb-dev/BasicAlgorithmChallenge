@@ -15,12 +15,12 @@ the selector method(). Now their interfaces are largely the same.
 All other methods they implement (as well as fields) are private, so as to
 hide from the user interface. 
 \
-e.g.
+e.g.\
 BasicAlgorithm object = new *ClassType*(*arguments*);\
 object.method(1);
 \
 \
-The different algorithms (.java) include: 
+The different algorithms (.java) include: \
 (by alphabetic order, not order completed)
 \
 CaesarsCipher\
@@ -38,10 +38,10 @@ SlasherFlick\
 StringsLongestWord\
 TitleCaser\
 TruncateString\
-WhereDoIBelong\
+WhereDoIBelong
 
 other files:\
 BasicAlgotirhm.java\
 Main.java\
-template.java\
+template.java
 
