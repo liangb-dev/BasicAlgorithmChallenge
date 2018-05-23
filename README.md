@@ -36,6 +36,8 @@ into an Object to be casted to the right type. Primitive types which stores
 primitive values, are not convertible to an Object. 
 Type-Erasure for backward compatility (Java 1.4 and below). 
 \
+\
+\
 The different algorithms (.java) include: \
 (by alphabetic order, not order completed)
 \
