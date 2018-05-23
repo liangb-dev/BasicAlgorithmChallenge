@@ -1,47 +1,31 @@
 /**
  * Factorialize an integer
  */
-public class Factorialize extends BasicAlgorithm {
+public class Factorialize extends BasicAlgorithm<Integer> {
 
     /* Fields */
-    private int n;
+    private int input;
     /* Constructor */
-    Factorialize(int n){
-        this.n = n;
+    Factorialize(int input){
+        this.input = input;
     }
 
 
-    /* Methods */
-
-    /**
-     * Choice method makes user interface universal
-     * no matter how many methods a class has.
-     * @param choice
-     */
-    public void method(int choice) {
-        switch(choice) {
-            case 1: method1();
-            break;
-            default:
-                System.out.println("Choice not available. Default choice:");
-                method1();
-        }
-    }
-
+    /* Choice Methods */
     /**
      * Factorializes an integer. Simply decrement while
      * multiplying to itself.
      * @return
      */
-    public int method1() {
+    protected Integer method1() {
         int result = 1;
-        int var_m = n;
+        int var_m = input;
         while (var_m > 0) {
             result = result * var_m;
             var_m--;
         }
 
-        System.out.println("The factorial of " + n + "! is: " + result);
+        System.out.println("The factorial of " + input + "! is: " + result);
         return result;
     }
 }

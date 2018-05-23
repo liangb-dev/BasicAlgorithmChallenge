@@ -1,40 +1,20 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 /**
  * Iterates through a matrix and returns an array of the largest
  * numbers from each subarray of the matrix.
  */
-public class ReturnLargestNumbers extends BasicAlgorithm {
+public class ReturnLargestNumbers extends BasicAlgorithm<ArrayList<Integer>> {
     /* Fields */
-    private int[][] n;
+    private int[][] input;
 
 
     /* Constructor */
-    ReturnLargestNumbers(int[][] n) {
-        this.n = n;
+    ReturnLargestNumbers(int[][] input) {
+        this.input = input;
     }
 
-
-    /* Methods */
-
-    /**
-     * Choice method makes user interface universal
-     * no matter how many methods a class has.
-     * @param choice
-     */
-    public void method(int choice) {
-        switch(choice) {
-            case 1:
-                method1();
-                break;
-            default:
-                System.out.println("Choice not available. Default choice:");
-                method1();
-
-        }
-    }
-
+    /* Choice Methods */
     /**
      * iterates through every subarray in the matrix, each time initializing
      * a new 'max' which, by the end of the subarray iteration, will store
@@ -42,10 +22,10 @@ public class ReturnLargestNumbers extends BasicAlgorithm {
      * This ArrayList stores the largest numbers from each subarray.
      * @return ArrayList of largest numbers
      */
-    private ArrayList<Integer> method1() {
+    protected ArrayList<Integer> method1() {
         ArrayList<Integer> result = new ArrayList<Integer>();
 
-        for (int[] array : n) {
+        for (int[] array : input) {
             int max = array[0];
             for (int num : array) {
                 if (num > max) {
@@ -56,13 +36,14 @@ public class ReturnLargestNumbers extends BasicAlgorithm {
         }
 
         System.out.println("The largest numbers of your matrix: ");
-        printMatrix(n);
+        printMatrix(input);
         System.out.println("..are the following: ");
         printArrayList(result);
 
         return result;
     }
 
+    /* Utility Methods */
     /**
      * Just a method used to print the matrix
      * @param x
@@ -77,6 +58,7 @@ public class ReturnLargestNumbers extends BasicAlgorithm {
         }
         System.out.println("\n");
     }
+
 
     /**
      * Just a method used to print the ArrayList

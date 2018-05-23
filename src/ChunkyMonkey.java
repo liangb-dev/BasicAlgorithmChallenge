@@ -1,4 +1,3 @@
-import java.security.InvalidAlgorithmParameterException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
@@ -16,25 +15,24 @@ import java.util.Iterator;
  * you can have any number of containers, as long as each only fits 'num'
  * amount of items).
  */
-public class ChunkyMonkey extends BasicAlgorithm {
+public class ChunkyMonkey extends BasicAlgorithm<ArrayList<ArrayList<String>>> {
     /* Fields */
-    private String[] n;
+    private String[] input;
     private int num;
 
 
     /* Constructor */
-    ChunkyMonkey(String[] n, int num) {
-            this.n = n;
+    ChunkyMonkey(String[] input, int num) {
+            this.input = input;
             this.num = num;
 
     }
 
 
-    /* Methods */
-
+    /* Choice Methods */
     /**
-     * Choice method makes user interface universal
-     * no matter how many methods a class has.
+     * Override Parent-Class choice method since
+     * we include a second choice.
      * @param choice
      */
     public void method(int choice) {
@@ -59,10 +57,10 @@ public class ChunkyMonkey extends BasicAlgorithm {
      * divided items in the required number of containers.
      * @return
      */
-    private ArrayList<ArrayList<String>> method1() {
+    protected ArrayList<ArrayList<String>> method1() {
 
         ArrayList<ArrayList<String>> arr = new ArrayList<ArrayList<String>>();
-        ArrayList<String> n_clone = new ArrayList<>(Arrays.asList(n));
+        ArrayList<String> n_clone = new ArrayList<>(Arrays.asList(input));
 
         // Create equal amount of containers as requested.
         for (int i=0;i<num;i++) {
@@ -83,7 +81,7 @@ public class ChunkyMonkey extends BasicAlgorithm {
         }
 
         System.out.println("Paying no attention to order, the Array - ");
-        printArrayList(new ArrayList<>(Arrays.asList(n)));
+        printArrayList(new ArrayList<>(Arrays.asList(input)));
         System.out.println("divided into " + this.num + " sections is: \n");
         printMatrix(arr);
 
@@ -108,12 +106,12 @@ public class ChunkyMonkey extends BasicAlgorithm {
      *
      * @return sorted Matrix
      */
-    private ArrayList<ArrayList<String>> method2() {
+    protected ArrayList<ArrayList<String>> method2() {
         ArrayList<ArrayList<String>> arr = new ArrayList<ArrayList<String>>();
-        ArrayList<String> n_clone = new ArrayList<>(Arrays.asList(n));
+        ArrayList<String> n_clone = new ArrayList<>(Arrays.asList(input));
 
-        int whole = Math.floorDiv(n.length,this.num);
-        int rem = n.length - whole*this.num; // 'rem' can be interpreted as number of exceptions
+        int whole = Math.floorDiv(input.length,this.num);
+        int rem = input.length - whole*this.num; // 'rem' can be interpreted as number of exceptions
         // where each exception gets an extra item
 
         // Create equal number of containers as requested
@@ -144,6 +142,7 @@ public class ChunkyMonkey extends BasicAlgorithm {
         return arr;
     }
 
+    /* Utility Methods */
     /**
      * Just a method used to print the matrix
      * @param x

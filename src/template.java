@@ -1,34 +1,25 @@
 /**
- * This is just a Mutations for Class consistency
- * between each challenge (class)
+ * This is just a template for Class consistency
+ * between each Class (challenge)
  */
-public class template extends BasicAlgorithm {
+public class template extends BasicAlgorithm<String> {
     /* Fields */
-    private int n;
+    private String input;
 
 
     /* Constructor */
-    template(int n) {
-        this.n = n;
+    template(String input) {
+        this.input = input;
     }
 
 
-    /* Methods */
+    /* Choice Methods */
+    protected String method1() {
 
-    /**
-     * Choice method makes user interface universal
-     * no matter how many methods a class has.
-     * @param choice
-     */
-    public void method(int choice) {
-        switch(choice) {
-            case 1:
-                //method1();
-                break;
-            default:
-                System.out.println("Choice not available. Default choice:");
-                //method1();
-
-        }
+        return "";
     }
+
+    /* Utility Methods */
+
+
 }

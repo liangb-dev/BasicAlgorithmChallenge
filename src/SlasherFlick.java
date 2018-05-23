@@ -4,61 +4,44 @@ import java.util.List;
 
 /**
  * Return the remaining elements of an array after
- * chopping off n elements from the head.
+ * chopping off input elements from the head.
  */
-public class SlasherFlick extends BasicAlgorithm {
+public class SlasherFlick extends BasicAlgorithm<String[]> {
     /* Fields */
-    private String[] n;
+    private String[] input;
     private int num;
 
 
     /* Constructor */
-    SlasherFlick(String[] n, int num) {
-        this.n = n;
+    SlasherFlick(String[] input, int num) {
+        this.input = input;
         this.num = num;
     }
 
 
-    /* Methods */
-
-    /**
-     * Choice method makes user interface universal
-     * no matter how many methods a class has.
-     * @param choice
-     */
-    public void method(int choice) {
-        switch(choice) {
-            case 1:
-                method1();
-                break;
-            default:
-                System.out.println("Choice not available. Default choice:");
-                method1();
-
-        }
-    }
-
+    /* Choice Methods */
     /**
      * I convert the original Array into a ListArray for easier handling.
      * Then I create a sub-List, splitting where required by the arguments.
      * The List is then converted back into an Array, and returned.
      * @return
      */
-    private String[] method1() {
-        ArrayList<String> arr = new ArrayList<>(Arrays.asList(n));
+    protected String[] method1() {
+        ArrayList<String> arr = new ArrayList<>(Arrays.asList(input));
         List<String> temp = arr.subList(this.num,arr.size());
         String[] result = new String[temp.size()];
         result = temp.toArray(result);
 
         System.out.println("When you chop off " + this.num + " elements " +
                 "from ");
-        printArray(n);
+        printArray(input);
         System.out.println("..you get: \n");
         printArray(result);
 
         return result;
     }
 
+    /* Utility Methods */
     /**
      * Function that prints an array inline
      * @param arr

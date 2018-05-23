@@ -1,40 +1,23 @@
 /**
  * Checks where the given 'integer x' would fit into
- * the given 'Array n' after that the Array has been
+ * the given 'Array input' after that the Array has been
  * sorted. It returns the index position of where it
  * would fit.
  */
-public class WhereDoIBelong extends BasicAlgorithm {
+public class WhereDoIBelong extends BasicAlgorithm<Integer> {
     /* Fields */
-    private int[] n;
+    private int[] input;
     private int x;
 
 
     /* Constructor */
-    WhereDoIBelong(int[] n, int x) {
-        this.n = n;
+    WhereDoIBelong(int[] input, int x) {
+        this.input = input;
         this.x = x;
     }
 
 
-    /* Methods */
-    /**
-     * Choice method makes user interface universal
-     * no matter how many methods a class has.
-     * @param choice
-     */
-    public void method(int choice) {
-        switch(choice) {
-            case 1:
-                method1();
-                break;
-            default:
-                System.out.println("Choice not available. Default choice:");
-                method1();
-
-        }
-    }
-
+    /* Choice Methods */
     /**
      * After sorting the Array, the function iterates through the
      * sorted Array while check where in it the given 'integer x'
@@ -42,25 +25,25 @@ public class WhereDoIBelong extends BasicAlgorithm {
      * then that's where it fits, and that's the index returned.
      * @return
      */
-    private int method1() {
+    protected Integer method1() {
 
         // First sort the int[] Array
-        int[] sorted_n = copyArray(n);
+        int[] sorted_n = copyArray(input);
         sortArray(sorted_n);
 
         // then compare the given value 'int x'
         // for where it would belong in the Array
         int min = 0;
-        for (int i=0; i < this.n.length; i++) {
+        for (int i = 0; i < this.input.length; i++) {
             if (sorted_n[i] >= this.x) {
                 min = i;
                 break;
             }
-            min = this.n.length;
+            min = this.input.length;
         }
 
         System.out.println("The array ");
-        printArray(this.n);
+        printArray(this.input);
         System.out.println("after being sorted is ");
         printArray(sorted_n);
         System.out.println("and within that, the number " + Integer.toString(x)
@@ -69,6 +52,8 @@ public class WhereDoIBelong extends BasicAlgorithm {
         return min;
     }
 
+
+    /* Utility Methods */
     /**
      * Rather cumbersome Bubblesort
      * @param arr0

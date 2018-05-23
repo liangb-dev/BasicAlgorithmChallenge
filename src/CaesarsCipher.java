@@ -7,55 +7,41 @@
  * encoded String is also written.
  *
  */
-public class CaesarsCipher extends BasicAlgorithm {
+public class CaesarsCipher extends BasicAlgorithm<String> {
     /* Fields */
-    private String str;
+    private String input;
 
 
     /* Constructor */
-    CaesarsCipher(String str) {
-        this.str = str;
+    CaesarsCipher(String input) {
+        this.input = input;
     }
 
 
-    /* Methods */
-
+    /* Choice Methods */
     /**
-     * Choice method makes user interface universal
-     * no matter how many methods a class has.
-     * @param choice
+     * Decode provided String that's been ROT13 encoded
+     * @return
      */
-    public void method(int choice) {
-        switch(choice) {
-            case 1:
-                method1();
-                break;
-            default:
-                System.out.println("Choice not available. Default choice:");
-                method1();
-
-        }
-    }
-
-    private String method1() {
-
-        String result = ROT13Decode(str);
+    protected String method1() {
+        String result = ROT13Decode(this.input);
 
         System.out.println("Trying to decode: ");
-        System.out.println(str);
+        System.out.println(input);
         System.out.println(".\n.\n.\n");
         System.out.println("'" + result + "'");
 
         return "";
     }
 
+    /* Utility Methods*/
     /**
      * Takes an ROT13 encoded String and decodes it
      * back to a regular String.
      * @param str
      * @return
      */
-    public String ROT13Decode(String str) {
+    private String ROT13Decode(String str) {
         String decoded = str;
 
         for(int i=0; i<decoded.length();i++) {
@@ -69,13 +55,14 @@ public class CaesarsCipher extends BasicAlgorithm {
         return decoded;
     }
 
+
     /**
      * Takes a regular String and encodes it with
      * ROT13 specification.
      * @param str
      * @return
      */
-    public String ROT13Encode(String str) {
+    private String ROT13Encode(String str) {
         String encoded = str;
 
         for(int i=0; i<encoded.length();i++) {
@@ -96,7 +83,7 @@ public class CaesarsCipher extends BasicAlgorithm {
      * @param a
      * @return
      */
-    public char ROT13CharEncoder(char a) {
+    private char ROT13CharEncoder(char a) {
         // Convert 'char a' to integer between 0-25
         int a_indx = (int)a - 65;
         // Perform +13 and modulo% so it remains
@@ -107,13 +94,14 @@ public class CaesarsCipher extends BasicAlgorithm {
         return (char)b_indx;
     }
 
+
     /**
      * Converts a 'Char b' by the ROT13 standard to an
      * decoded 'Char a'.
      * @param b
      * @return
      */
-    public char ROT13CharDecoder(char b) {
+    private char ROT13CharDecoder(char b) {
         int a_indx = ((int)b - 65) - 13;
 
         if (a_indx < 0) {

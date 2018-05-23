@@ -1,33 +1,17 @@
 /**
  * Check if a String is a Palindrome
  */
-public class CheckPalindrome extends BasicAlgorithm {
+public class CheckPalindrome extends BasicAlgorithm<Boolean> {
 
     /* Fields */
-    private String n;
+    private String input;
 
     /* Constructor */
     CheckPalindrome(String n) {
-        this.n = n;
+        this.input = n;
     }
 
-    /* Methods */
-    /**
-     * Choice method makes user interface universal
-     * no matter how many methods a class has.
-     * @param choice
-     */
-    public void method(int choice) {
-        switch (choice) {
-            case 1:
-                method1();
-                break;
-            default:
-                System.out.println("Choice not available. Default choice:");
-                method1();
-        }
-    }
-
+    /* Choice Methods */
     /**
      * Taking inspiration from the Googled method of reversing
      * a string, I reduced the number of variables so that the
@@ -40,17 +24,16 @@ public class CheckPalindrome extends BasicAlgorithm {
      */
     public Boolean method1() {
         String result = "";
-
         int i = 0;
 
-        while (i < n.length()-1-i) {
-            if (n.charAt(i) != (n.charAt(n.length()-1-i))) {
-                System.out.println("'"+ n + "' is NOT a Palindrome. ");
+        while (i < input.length()-1-i) {
+            if (input.charAt(i) != (input.charAt(input.length()-1-i))) {
+                System.out.println("'"+ input + "' is NOT a Palindrome. ");
                 return false;
             }
             i++;
         }
-        System.out.println("'"+ n + "' is a Palindrome. ");
+        System.out.println("'"+ input + "' is a Palindrome. ");
         return true;
     }
 }

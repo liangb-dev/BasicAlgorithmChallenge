@@ -2,7 +2,7 @@
  * Confirms whether a String ends with a certain
  * sequence of characters.
  */
-public class ConfirmEnding extends BasicAlgorithm {
+public class ConfirmEnding extends BasicAlgorithm<Boolean> {
     /* Fields */
     private String original;
     private String ending;
@@ -14,31 +14,13 @@ public class ConfirmEnding extends BasicAlgorithm {
         this.ending = ending;
     }
 
-
-    /* Methods */
-    /**
-     * Choice method makes user interface universal
-     * no matter how many methods a class has.
-     * @param choice
-     */
-    public void method(int choice) {
-        switch(choice) {
-            case 1:
-                method1();
-                break;
-            default:
-                System.out.println("Choice not available. Default choice:");
-                //method1();
-
-        }
-    }
-
+    /* Choice Methods */
     /**
      * Using 'String'.endsWith() we check whether given String ends with
      * give String.
      * @return
      */
-    private boolean method1() {
+    protected Boolean method1() {
         boolean indictment = ((original.endsWith(ending))? true : false);
         System.out.println("It is " + ((indictment)? "TRUE":"FALSE") +
                 " that the word '" + original + "' ends with '" + ending + "'.");

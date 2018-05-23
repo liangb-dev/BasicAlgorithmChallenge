@@ -3,38 +3,20 @@
  * contains all of the letters of the String in the second
  * element of the Array.
  */
-public class Mutations extends BasicAlgorithm {
+public class Mutations extends BasicAlgorithm<Boolean> {
     /* Fields */
-    private String[] n;
+    private String[] input;
 
     /* Constructor */
-    Mutations(String[] n) {
-        this.n = n;
+    Mutations(String[] input) {
+        this.input = input;
     }
 
 
-    /* Methods */
-
-    /**
-     * Choice method makes user interface universal
-     * no matter how many methods a class has.
-     * @param choice
-     */
-    public void method(int choice) {
-        switch(choice) {
-            case 1:
-                method1();
-                break;
-            default:
-                System.out.println("Choice not available. Default choice:");
-                method1();
-
-        }
-    }
-
-    private boolean method1() {
-        String first = n[0];
-        String second = n[1];
+    /* Choice Methods */
+    protected Boolean method1() {
+        String first = input[0];
+        String second = input[1];
 
         for (int i = 0; i < second.length();i++) {
             if (!first.contains(Character.toString(second.charAt(i)))){

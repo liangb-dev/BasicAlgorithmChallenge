@@ -1,52 +1,33 @@
 /**
  * Repeat a String a certain number of times
  */
-public class RepeatAString extends BasicAlgorithm {
+public class RepeatAString extends BasicAlgorithm<String> {
     /* Fields */
+    private String input;
     private int num;
-    private String n;
 
 
     /* Constructor */
-    RepeatAString(String n, int num) {
-        this.n = n;
+    RepeatAString(String input, int num) {
+        this.input = input;
         this.num = num;
     }
 
-
-    /* Methods */
-
-    /**
-     * Choice method makes user interface universal
-     * no matter how many methods a class has.
-     * @param choice
-     */
-    public void method(int choice) {
-        switch(choice) {
-            case 1:
-                method1();
-                break;
-            default:
-                System.out.println("Choice not available. Default choice:");
-                method1();
-
-        }
-    }
-
+    /* Choice Methods */
     /**
      * Repeats the required number of times using a while-loop
      * @return
      */
-    private String method1() {
+    protected String method1() {
         String result = "";
         int num = this.num;
         while (num > 0) {
-            result += n + " ";
+            result += input + " ";
             num--;
         }
         result = result.substring(0,result.length()-1);
 
-        System.out.println("The result of '" + n +"' repeated "
+        System.out.println("The result of '" + input +"' repeated "
                 + this.num + " times is: ");
         System.out.println(result);
 

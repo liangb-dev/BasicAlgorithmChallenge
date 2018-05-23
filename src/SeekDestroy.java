@@ -4,7 +4,7 @@
  * eliminated from the given int[] Array.
  */
 
-public class SeekDestroy extends BasicAlgorithm {
+public class SeekDestroy extends BasicAlgorithm<int[]> {
     /* Fields */
     private int[] n;
     private int[] a;
@@ -16,26 +16,8 @@ public class SeekDestroy extends BasicAlgorithm {
     }
 
 
-    /* Methods */
-
-    /**
-     * Choice method makes user interface universal
-     * no matter how many methods a class has.
-     * @param choice
-     */
-    public void method(int choice) {
-        switch(choice) {
-            case 1:
-                method1();
-                break;
-            default:
-                System.out.println("Choice not available. Default choice:");
-                method1();
-
-        }
-    }
-
-    /**
+    /* Choice Methods */
+        /**
      * I refrained from using any external methods to manipulate the Array,
      * and made my own methods to finds its size and to eliminate an element
      * from it.
@@ -44,7 +26,7 @@ public class SeekDestroy extends BasicAlgorithm {
      * within int[] Array would be removed.
      * @return
      */
-    private int[] method1() {
+    protected int[] method1() {
         int[] result = n;
 
         for (int x : a) {
@@ -65,6 +47,8 @@ public class SeekDestroy extends BasicAlgorithm {
 
         return result;
     }
+
+    /* Utility Methods */
 
     /**
      * Removes an element 'int x' from an Array 'int[] arr'
@@ -94,7 +78,6 @@ public class SeekDestroy extends BasicAlgorithm {
                 j++;
             }
         }
-
 
         return g;
     }

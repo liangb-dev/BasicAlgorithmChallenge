@@ -1,19 +1,17 @@
-import java.util.Arrays;
-
 /**
  * Reverse a String
  */
-public class ReverseString extends BasicAlgorithm {
+public class ReverseString extends BasicAlgorithm<String> {
 
     /* Fields */
-    private String n;
+    private String input;
+
     /* Constructor */
-    ReverseString(String n) {
-        this.n = n;
+    ReverseString(String input) {
+        this.input = input;
     }
 
-    /* Methods */
-
+    /* Choice Methods */
     /**
      * Choice method makes user interface universal
      * no matter how many methods a class has.
@@ -45,15 +43,15 @@ public class ReverseString extends BasicAlgorithm {
      * respect I suppose it's cleverer.
      * @return
      */
-    private String method1() {
+    protected String method1() {
 
         /* Method 1: External String */
         String result = "";
-        for (int i=n.length()-1;i>-1;i--) {
-            result += n.charAt(i);
+        for (int i = input.length()-1; i>-1; i--) {
+            result += input.charAt(i);
         }
         System.out.println("Using method 1 (External String): ");
-        System.out.println("The reverse of '" + n + "' is '" + result + "'.");
+        System.out.println("The reverse of '" + input + "' is '" + result + "'.");
         return result;
     }
 
@@ -65,11 +63,11 @@ public class ReverseString extends BasicAlgorithm {
      * It's also BigO=N/2 compared to method 1 with BigO=N.
      * @return
      */
-    private String method2() {
+    protected String method2() {
         int start = 0;
-        int end = n.length() - 1;
+        int end = input.length() - 1;
 
-        String[] parsed_n = n.split("");
+        String[] parsed_n = input.split("");
         String tmp;
 
         while (start < end) {
@@ -85,7 +83,7 @@ public class ReverseString extends BasicAlgorithm {
             result += l;
         }
         System.out.println("Using method 2 (CharArray Manipulation): " );
-        System.out.println("The reverse of '" + n + "' is '" + result + "'.");
+        System.out.println("The reverse of '" + input + "' is '" + result + "'.");
 
         return result;
 

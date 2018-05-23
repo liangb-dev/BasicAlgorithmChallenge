@@ -2,45 +2,27 @@
  * Truncate a String based on given maximum String length
  * and append '...' to the end of it.
  */
-public class TruncateString extends BasicAlgorithm {
+public class TruncateString extends BasicAlgorithm<String> {
     /* Fields */
-    private String n;
+    private String input;
     private int num;
 
 
     /* Constructor */
-    TruncateString(String n, int num) {
-        this.n = n;
+    TruncateString(String input, int num) {
+        this.input = input;
         this.num = num;
     }
 
 
-    /* Methods */
-
-    /**
-     * Choice method makes user interface universal
-     * no matter how many methods a class has.
-     * @param choice
-     */
-    public void method(int choice) {
-        switch(choice) {
-            case 1:
-                method1();
-                break;
-            default:
-                System.out.println("Choice not available. Default choice:");
-                method1();
-
-        }
-    }
-
-    /**
+    /* Choice Methods */
+        /**
      * Use the String.substring() method to adjust String to desired length
      * @return
      */
-    private String method1() {
-        String result = n.substring(0,num) + "...";
-        System.out.println("'" + n + "'");
+    protected String method1() {
+        String result = input.substring(0,num) + "...";
+        System.out.println("'" + input + "'");
         System.out.println("truncated to a String length of " + num +" is: ");
         System.out.println("'" + result + "'.");
         return result;
