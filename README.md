@@ -5,6 +5,8 @@ These algorithm challenges come from freeCodeCamp.com, and were originally
 intended for javascript I believe. Here I have solved them using Java for
 practice. 
 \
+\
+\
 Abstract Inheritance\
 Each algorithm is implemented as a separate Class, but which inherits a
 single method from Abstract Class 'BasicAlgorithm' - the selector method
