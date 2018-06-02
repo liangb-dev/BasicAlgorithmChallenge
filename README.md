@@ -45,20 +45,20 @@ Type-Erasure for backward compatility (Java 1.4 and below).
 <br>
 1 <a href="https://github.com/liangb-dev/BasicAlgorithmChallenge/blob/master/src/CaesarsCipher.java">CaesarsCipher</a><br>
 2 <a href=https://github.com/liangb-dev/BasicAlgorithmChallenge/blob/master/src/CheckPalindrome.java>CheckPalindrome</a><br>
-3 ChunkyMonkey<br>
-4 ConfirmEnding<br>
-5 Factorialize<br>
-6 FalsyBouncer (N/A)<br>
-7 Mutations<br>
-8 RepeatAString<br>
-9 ReturnLargestNumbers<br>
-10 ReverseString<br>
-11SeekDestroy<br>
-12 SlasherFlick<br>
-13 StringsLongestWord<br>
-14 TitleCaser<br>
-15 TruncateString<br>
-16 WhereDoIBelong<br>
+3 <a href=https://github.com/liangb-dev/BasicAlgorithmChallenge/blob/master/src/ChunkyMonkey.java>ChunkyMonkey</a><br>
+4 <a href=./blob/master/src/ConfirmEnding.java>ConfirmEnding</a><br>
+5 <a href=>Factorialize</a><br>
+6 FalsyBouncer<br>
+7 <a href=>Mutations</a><br>
+8 <a href=>RepeatAString</a><br>
+9 <a href=>ReturnLargestNumbers</a><br>
+10 <a href=>ReverseString</a><br>
+11 <a href=>SeekDestroy</a><br>
+12 <a href=>SlasherFlick</a><br>
+13 <a href=>StringsLongestWord</a><br>
+14 <a href=>TitleCaser</a><br>
+15 <a href=>TruncateString</a><br>
+16 <a href=>WhereDoIBelong</a><br>
 
 <h3>Other files:</h3>
 BasicAlgotirhm.java<br>
