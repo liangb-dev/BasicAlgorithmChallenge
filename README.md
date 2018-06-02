@@ -43,8 +43,8 @@ Type-Erasure for backward compatility (Java 1.4 and below).
 <h2>Content: </h2>
 (by alphabetic order, not order completed)
 <br>
-1 CaesarsCipher<br>
-2 CheckPalindrome<br>
+1 <a href="https://github.com/liangb-dev/BasicAlgorithmChallenge/blob/master/src/CaesarsCipher.java">CaesarsCipher</a>
+2 <a href=https://github.com/liangb-dev/BasicAlgorithmChallenge/blob/master/src/CheckPalindrome.java>CheckPalindrome</a>
 3 ChunkyMonkey<br>
 4 ConfirmEnding<br>
 5 Factorialize<br>
