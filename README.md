@@ -46,7 +46,7 @@ Type-Erasure for backward compatility (Java 1.4 and below).
 1 <a href="https://github.com/liangb-dev/BasicAlgorithmChallenge/blob/master/src/CaesarsCipher.java">CaesarsCipher</a><br>
 2 <a href=https://github.com/liangb-dev/BasicAlgorithmChallenge/blob/master/src/CheckPalindrome.java>CheckPalindrome</a><br>
 3 <a href=https://github.com/liangb-dev/BasicAlgorithmChallenge/blob/master/src/ChunkyMonkey.java>ChunkyMonkey</a><br>
-4 <a href=./blob/master/src/ConfirmEnding.java>ConfirmEnding</a><br>
+4 <a href=./ConfirmEnding.java>ConfirmEnding</a><br>
 5 <a href=>Factorialize</a><br>
 6 FalsyBouncer<br>
 7 <a href=>Mutations</a><br>
