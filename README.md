@@ -43,25 +43,25 @@ Type-Erasure for backward compatility (Java 1.4 and below).
 <h2>Content: </h2>
 (by alphabetic order, not order completed)
 <br>
-1 <a href="https://github.com/liangb-dev/BasicAlgorithmChallenge/blob/master/src/CaesarsCipher.java">CaesarsCipher</a><br>
-2 <a href=https://github.com/liangb-dev/BasicAlgorithmChallenge/blob/master/src/CheckPalindrome.java>CheckPalindrome</a><br>
-3 <a href=https://github.com/liangb-dev/BasicAlgorithmChallenge/blob/master/src/ChunkyMonkey.java>ChunkyMonkey</a><br>
-4 <a href=./ConfirmEnding.java>ConfirmEnding</a><br>
-5 <a href=>Factorialize</a><br>
+1 <a href=/src/CaesarsCipher.java">CaesarsCipher</a><br>
+2 <a href=/src/CheckPalindrome.java>CheckPalindrome</a><br>
+3 <a href=/src/ChunkyMonkey.java>ChunkyMonkey</a><br>
+4 <a href=/src/ConfirmEnding.java>ConfirmEnding</a><br>
+5 <a href=/src/Factorialize.java>Factorialize</a><br>
 6 FalsyBouncer<br>
-7 <a href=>Mutations</a><br>
-8 <a href=>RepeatAString</a><br>
-9 <a href=>ReturnLargestNumbers</a><br>
-10 <a href=>ReverseString</a><br>
-11 <a href=>SeekDestroy</a><br>
-12 <a href=>SlasherFlick</a><br>
-13 <a href=>StringsLongestWord</a><br>
-14 <a href=>TitleCaser</a><br>
-15 <a href=>TruncateString</a><br>
-16 <a href=>WhereDoIBelong</a><br>
+7 <a href=/src/Mutations.java>Mutations</a><br>
+8 <a href=/src/RepeatAString.java>RepeatAString</a><br>
+9 <a href=/src/ReturnLargestNumbers.java>ReturnLargestNumbers</a><br>
+10 <a href=/src/ReverseString.java>ReverseString</a><br>
+11 <a href=/src/SeekDestroy.java>SeekDestroy</a><br>
+12 <a href=/src/SlasherFlick.java>SlasherFlick</a><br>
+13 <a href=/src/StringsLongestWord.java>StringsLongestWord</a><br>
+14 <a href=/src/TitleCaser.java>TitleCaser</a><br>
+15 <a href=/src/TruncateString.java>TruncateString</a><br>
+16 <a href=/src/WhereDoIBelong.java>WhereDoIBelong</a><br>
 
 <h3>Other files:</h3>
-BasicAlgotirhm.java<br>
-Main.java<br>
-template.java<br>
+<a href=/src/BasicAlgotirhm.java>BasicAlgotirhm.java</a><br>
+<a href=/src/Main.java>Main.java</a><br>
+<a href=/src/template.java>template.java</a><br>
 
