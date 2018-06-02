@@ -61,7 +61,7 @@ Type-Erasure for backward compatility (Java 1.4 and below).
 16 <a href=/src/WhereDoIBelong.java>WhereDoIBelong</a><br>
 
 <h3>Other files:</h3>
-<a href=/src/BasicAlgotirhm.java>BasicAlgotirhm.java</a><br>
+<a href=/src/BasicAlgorithm.java>BasicAlgorithm.java</a><br>
 <a href=/src/Main.java>Main.java</a><br>
 <a href=/src/template.java>template.java</a><br>
 
