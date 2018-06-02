@@ -7,7 +7,7 @@ practice.
 \
 \
 \
-Abstract Inheritance\
+<h2>Abstract Inheritance</h2>
 Each algorithm is implemented as a separate Class, but which inherits a
 single method from Abstract Class 'BasicAlgorithm' - the selector method
 called method(). Each Class inherits this selector method, which is 
@@ -27,7 +27,7 @@ e.g.\
 BasicAlgorithm object = new *ClassType*(*arguments*);\
 object.method(1);\
 \
-Generics\
+<h2>Generics</h2>
 Another thing worth mentioning is the use of generics, since the 'Choice Method'
 inmplemented by each Class may each return a different Type. Generics was 
 used here to let each class choose what Type to return, despite inheriting
@@ -40,27 +40,27 @@ Type-Erasure for backward compatility (Java 1.4 and below).
 \
 \
 \
-The different algorithms (.java) include: \
+<h2>Content: </h2>
 (by alphabetic order, not order completed)
 \
-CaesarsCipher\
-CheckPalindrome\
-ChunkyMonkey\
-ConfirmEnding\
-Factorialize\
-FalsyBouncer (N/A)\
-Mutations\
-RepeatAString\
-ReturnLargestNumbers\
-ReverseString\
-SeekDestroy\
-SlasherFlick\
-StringsLongestWord\
-TitleCaser\
-TruncateString\
-WhereDoIBelong
+1 CaesarsCipher\
+2 CheckPalindrome\
+3 ChunkyMonkey\
+4 ConfirmEnding\
+5 Factorialize\
+6 FalsyBouncer (N/A)\
+7 Mutations\
+8 RepeatAString\
+9 ReturnLargestNumbers\
+10 ReverseString\
+11SeekDestroy\
+12 SlasherFlick\
+13 StringsLongestWord\
+14 TitleCaser\
+15 TruncateString\
+16 WhereDoIBelong
 
-other files:\
+<h3>Other files:</h3>
 BasicAlgotirhm.java\
 Main.java\
 template.java
